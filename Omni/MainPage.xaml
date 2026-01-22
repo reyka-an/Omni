@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Omni.MainPage"
+             Title="Omni">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="6">
+                <Label Text="Omni" Style="{StaticResource TitleText}" />
+                <Label Text="Выбери раздел" Style="{StaticResource SubtitleText}" />
+            </VerticalStackLayout>
+
+            <!-- Card -->
+            <Frame Style="{StaticResource CardFrame}">
+                <VerticalStackLayout Spacing="12">
+
+                    <Button Text="✅  To Do"
+                            Style="{StaticResource MenuButton}"
+                            Clicked="OnToDoClicked" />
+
+                    <Button Text="⏱️  Track Time"
+                            Style="{StaticResource MenuButton}"
+                            Clicked="OnTrackTimeClicked" />
+
+                    <Button Text="🎬  Movie List"
+                            Style="{StaticResource MenuButton}"
+                            Clicked="OnMovieListClicked" />
+
+                    <Button Text="🍎  Calories"
+                            Style="{StaticResource MenuButton}"
+                            Clicked="OnCaloriesClicked" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Функционал добавим постепенно — сначала сделаем структуру."
+                   Style="{StaticResource SubtitleText}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
