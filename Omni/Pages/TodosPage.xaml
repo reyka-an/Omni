@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Omni.Pages.TodosPage"
+             Title="Todos">
+    <VerticalStackLayout Padding="24" Spacing="10">
+        <Label Text="Todos" Style="{StaticResource TitleText}" />
+        <Label Text="Скоро добавим список задач." Style="{StaticResource SubtitleText}" />
+    </VerticalStackLayout>
+</ContentPage>
